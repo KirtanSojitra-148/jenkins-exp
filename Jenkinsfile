@@ -30,7 +30,7 @@ pipeline {
             steps {
                 echo 'Running tests...'
                 sh 'test -f build/index.html'
-                sh 'grep -q "Student Management System" build/index.html'
+                sh 'grep -q "Add Student" build/index.html'
                 echo 'Student application test passed'
             }
         }
